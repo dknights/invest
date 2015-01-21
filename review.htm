@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Your Existing Investments</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+     <script type="text/javascript" src="canvasjs.min.js"></script>
+<script type="text/javascript">
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer",
+	{
+		title:{
+			text: "Your portfolio"
+		},
+                animationEnabled: true,
+		legend:{
+			verticalAlign: "bottom",
+			horizontalAlign: "center"
+		},
+		data: [
+		{        
+			indexLabelFontSize: 20,
+			indexLabelFontFamily: "Monospace",       
+			indexLabelFontColor: "darkgrey", 
+			indexLabelLineColor: "darkgrey",        
+			indexLabelPlacement: "outside",
+			type: "pie",       
+			showInLegend: true,
+			toolTipContent: "{y} - <strong>#percent%</strong>",
+			dataPoints: [
+				{  y: 4181563, legendText:"GSK", indexLabel: "GlacksoSmithKline plc " },
+				{  y: 2175498, legendText:"NG", indexLabel: "National Grid" },
+				{  y: 3125844, legendText:"BARC",exploded: true, indexLabel: "Barclays" },
+				{  y: 1176121, legendText:"BP" , indexLabel: "BP plc"},
+				{  y: 1727161, legendText:"TSCO", indexLabel: "Tescos" },
+			
+			]
+		}
+		]
+	});
+	chart.render();
+}
+</script>
+   
+
+</head>
+<body>
+    <div class="header-icon">
+        
+        <div class="row">
+            <div class="col-sm-6">
+              <img src="images/logo.png" class="img-responsive"/>
+            </div>
+        </div>
+        
+    </div>
+     <main class="container-fluid">
+        
+        <div class="row">
+       <div class="col-xs-1">
+            <a href="work.html"><i class="fa fa-angle-left fa-4x" ></i></a>
+           </div>
+
+ <div class="col-xs-10">
+        <ol class="row steps">
+           
+            <li><a href="work.htm">1</a></li>
+            <li><a href="existing-investments.htm">2</a></li>
+            <li><a href="contacts.htm">3</a></li>
+            <li><a href="risk.htm">4</a></li>
+            <li><a href="recommendations.htm">5</a></li>
+            <li><strong>6</strong></li>
+        </ol>
+      </div> 
+           </div> 
+
+    <div class="row">
+        <div class="col-sm-12">
+       <div class="panel panel-default">
+            <div class="panel-body">
+      <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+              <hr> 
+                <h3>Estimated return on investment</h3>
+                <p>1 month: 5%</p>
+                <p>1 yr: 3%</p>
+                <p>5 yr: 15%</p>
+                
+                
+                </div>
+           </div>
+        </div>
+    </div>
+          
+    </main>
+    
+</body>
+</html>

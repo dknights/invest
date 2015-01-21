@@ -1,0 +1,133 @@
+header {
+    color: #fff;
+    background-color: #233e6f; /* Morgan Stanley blue */
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.disclaimer {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+/*
+    Form steps
+*/
+.steps
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.steps li
+{
+    display: inline-block;
+}
+
+.steps li a,
+.steps li a, .steps li strong {
+display: inline-block;
+min-width: 2.5em;
+height: 2.5em;
+line-height: 2.3em;
+border-radius: 1.5em;
+margin: 0 0.2em;
+border-width: 2px;
+border-color: #233e6f;
+border-style: solid;
+}
+
+.steps li a
+{
+    background-color: #233e6f; /* Morgan Stanley blue */
+    color: #fff;
+}
+
+.steps li a:hover,
+.steps li a:active
+{
+    background-color: #fff; /* Morgan Stanley blue */
+    color: #233e6f;
+    text-decoration: none;
+}
+
+.steps li strong
+{
+    color: #233e6f; /* Morgan Stanley blue */
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+
+
+/*
+    Sliders
+*/
+.slider.slider-horizontal {
+    /* Overriding dumb-ass inline CSS width from slider plug-in */
+    width: 100% !important; 
+    
+    clear: both; /* clear labels */
+}
+
+.slider-low-label {
+    float: left;   
+}
+
+.slider-high-label {
+    float: right;   
+}
+
+
+/*
+    Page-specific stuff
+*/
+
+/* Contact linking message is initially hidden */
+#contacts-after
+{
+    display: none;
+}
+
+p {
+    font-size:16px!important;
+}
+
+body {
+    background-color: #EDEDED!important;
+}
+
+.row {
+margin-right: -15px!important;
+margin-left: -15px!important;
+}
+
+
+.alert-info {
+color: #31708f;
+background-color: #d9edf7;
+border-color: #bce8f1;
+height: 80px;
+    
+}
+
+
+.alert {
+padding: 15px;
+margin-bottom: 20px;
+border: 1px solid transparent;
+border-radius: 4px;
+padding-top: 5px;
+}

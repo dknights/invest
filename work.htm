@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Your Work Details</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <div class="header-icon">
+        
+        <div class="row">
+            <div class="col-sm-6">
+              <img src="images/logo.png" class="img-responsive"/>
+            </div>
+        </div>
+        
+    </div>
+        
+
+    <main class="container-fluid">
+        
+        <div class="row">
+       <div class="col-xs-1">
+            <a href="index.html"><i class="fa fa-angle-left fa-4x" ></i></a>
+           </div>
+
+ <div class="col-xs-10">
+        <ol class="row steps">
+           
+            <li><strong>1</strong></li>
+            <li><a href="existing-investments.htm">2</a></li>
+            <li><a href="contacts.htm">3</a></li>
+            <li><a href="risk.htm">4</a></li>
+            <li><a href="recommendations.htm">5</a></li>
+            <li><a href="review.htm">6</a></li>
+         
+        </ol>
+      </div> 
+           </div> 
+
+    <div class="row">
+       <div class="col-xs-12">
+         <div class="panel panel-default">
+            <div class="panel-body">
+         <div class="row"> 
+            <div class="col-sm-12 pull-left">
+                  <h3><i class="fa fa-user fa-2x"></i> Your work</h3>  
+             </div>
+            
+            </div>
+        <!-- intro text -->
+        <section class="row">
+            <p class="col-sm-12">Welcome <strong>Alice</strong>! Please tell the Virtual Investment Manager a little about your work. This will help it find investment opportunities that may be of interest to you.</p>
+        </section>
+        
+        <section>
+            <form class="form-horizontal" method="get" action="existing-investments.htm">
+                <div class="form-group">
+                    <label for="work-industry" class="col-sm-4 control-label">Industry</label>
+                    <div class="col-sm-8">
+                        <select class="form-control" id="work-industry" placeholder="Enter email">
+                            <option>Agriculture</option>
+                            <option>Automotive</option>
+                            <option>Natural Resources</option>
+                            <option selected>Technology</option>
+                            <option>Telecomms</option>
+                            <option>Zoology</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="work-seniority" class="col-sm-4 control-label">Seniority</label>
+                    <div class="col-sm-8">
+                        <select class="form-control" id="work-seniority" placeholder="Enter email">
+                            <option>Junior</option>
+                            <option>Team Lead</option>
+                            <option>Manager</option>
+                            <option selected>Vice President</option>
+                            <option>C-Level</option>
+                            <option>Owner</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="work-salary" class="col-sm-4 control-label">Annual Salary</label>
+                    <div class="col-sm-8">
+                        <div class="input-group">
+                            <div class="input-group-addon">£</div>
+                            <input type="number" class="form-control" id="work-salary" placeholder="Amount">
+                            <div class="input-group-addon">.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-8">
+                        <button type="submit" class="btn btn-primary">Continue</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

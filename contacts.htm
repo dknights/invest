@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Link your contacts</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+     <div class="header-icon">
+        
+        <div class="row">
+            <div class="col-sm-6">
+              <img src="images/logo.png" class="img-responsive"/>
+            </div>
+        </div>
+        
+    </div>
+     <main class="container-fluid">
+        
+        <div class="row">
+       <div class="col-xs-1">
+            <a href="existing-investments.htm"><i class="fa fa-angle-left fa-4x" ></i></a>
+           </div>
+
+ <div class="col-xs-10">
+        <ol class="row steps">
+           
+            <li><a href="index.html">1</a></li>
+            <li><a href="existing-investments.htm">2</a></li>
+            <li><strong>3</strong></li>
+            <li><a href="risk.htm">4</a></li>
+            <li><a href="recommendations.htm">5</a></li>
+            <li><a href="review.htm">6</a></li>
+        </ol>
+      </div> 
+           </div> 
+
+    <div class="row">
+       <div class="col-xs-12">
+         <div class="panel panel-default">
+            <div class="panel-body">
+         <div class="row"> 
+            <div class="col-sm-12 pull-left">
+                  <h3><i class="fa fa-mobile fa-2x"></i> Contacts</h3>  
+             </div>
+            
+            </div>
+      
+        <!-- intro text -->
+        <section class="row">
+            <div class="col-sm-12 pull-left">
+            <p>You can unlock extra features in the Virtual Investment Manager and receive more relevant investment recommendations if you grant it access to your contacts list.</p>
+            </div>
+        </section>
+        
+        <section>
+            <div class="form-horizontal" id="contacts-before">
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-8">
+                        <button class="btn btn-default" data-toggle="modal" data-target="#link-contacts-modal">Link contacts</button>
+                    </div>
+                </div>
+            </div>
+            <div id="contacts-after" class="alert alert-success col-sm-12">
+                <p><strong>Contacts linked successfully!</strong></p>
+                <p>123 of your contacts are also using Virtual Investment Manager!</p>
+            </div>
+            <form class="form-horizontal" method="get" action="risk.htm">
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-8">
+                        <button type="submit" class="btn btn-primary">Continue</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+                
+         <section class="row">
+             <p class="col-sm-12 disclaimer">Note that your contacts' details will not be shared with any 3rd parties and this step is optional.</p>
+        </section>
+             </div>
+           </div>
+                
+        <div class="modal fade" id="link-contacts-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Contact Access</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Do you wish to allow "Virtual Investment Manager" access to your device's contacts?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-primary">Yes</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+                
+          
+    </main>
+    
+    <script src="jquery-1.11.2.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $().ready( function(){
+           
+            // Make linking button in modal reveal success message
+            $('#link-contacts-modal .btn-primary').click( function(){
+                console.log('foo');
+                // Hide linking button
+                $('#contacts-before').hide();
+                // Show success message
+                $('#contacts-after').show();
+                // Close modal
+                $('#link-contacts-modal').modal('hide');
+            });
+
+        });
+    
+    </script>
+</body>
+</html>

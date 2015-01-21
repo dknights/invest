@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Risk &amp; Engagement</title>
+     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="slider/css/slider.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header-icon">
+        
+        <div class="row">
+            <div class="col-sm-6">
+              <img src="images/logo.png" class="img-responsive"/>
+            </div>
+        </div>
+        
+    </div>
+        
+
+    <main class="container-fluid">
+        
+        <div class="row">
+       <div class="col-xs-1">
+            <a href="contacts.htm"><i class="fa fa-angle-left fa-4x" ></i></a>
+           </div>
+
+ <div class="col-xs-10">
+        <ol class="row steps">
+           
+            <li><a href="index.html">1</a></li>
+            <li><a href="existing-investments.htm">2</a></li>
+            <li><a href="contacts.htm">3</a></li>
+            <li><strong>4</strong></li>
+            <li><a href="recommendations.htm">5</a></li>
+            <li><a href="review.htm">6</a></li>
+        </ol>
+      </div> 
+           </div> 
+
+    <div class="row">
+       <div class="col-xs-12">
+         <div class="panel panel-default">
+            <div class="panel-body">
+         <div class="row"> 
+            <div class="col-sm-12 pull-left">
+                  <h3><i class="fa fa-fire fa-2x"></i> Risk</h3>  
+             </div>
+            
+            </div>
+        <!-- intro text -->
+        <section class="row">
+            <p class="col-sm-12">Please indicate to the Virtual Investment Manager what level of risk you are comfortable with for your investments and how closely you intend to manage them.</p>
+        </section>
+        
+        <section>
+            <form class="form-horizontal" method="get" action="recommendations.htm">
+                <div class="form-group">
+                    <label for="risk-risk" class="col-sm-4 control-label">Risk</label>
+                    <div class="col-sm-8">
+                            <span class="slider-low-label">Low</span>
+                            <span class="slider-high-label">High</span>
+                            <input type="number" class="form-control slider" id="risk-risk" placeholder="Amount" data-slider-value="5">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="risk-involvement" class="col-sm-4 control-label">Involvement</label>
+                    <div class="col-sm-8">
+                            <span class="slider-low-label">Low</span>
+                            <span class="slider-high-label">High</span>
+                            <input type="number" class="form-control slider" id="risk-involvement" placeholder="Amount" data-slider-value="5">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-8">
+                        <button type="submit" class="btn btn-primary">Get recommendations</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+                
+    </main>
+    <script src="jquery-1.11.2.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="slider/js/bootstrap-slider.js"></script>
+    <script>
+        $().ready( function(){
+           
+            // Make linking button in modal reveal success message
+            $('.slider').slider();
+
+        });
+    
+    </script>
+</body>
+</html>
